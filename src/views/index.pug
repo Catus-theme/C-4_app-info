@@ -1,0 +1,153 @@
+extends ./template/layout.pug
+block title
+  title :: App Info CATUS ::
+block append font
+block append css
+block append script
+block main 
+  nav.navbar.navbar-default(role='navigation')
+      .container
+        .navbar-header
+          button.navbar-toggle(type='button', data-toggle='collapse', data-target='.navbar-ex1-collapse')
+            span.sr-only Toggle navigation
+            span.icon-bar
+            span.icon-bar
+            span.icon-bar
+          a.navbar-brand(href='#') PUZZLE KOREAN 
+        .collapse.navbar-collapse.navbar-ex1-collapse
+          ul.nav.navbar-nav
+            li
+              a(onclick="$('header').animatescroll({padding:71});") 시작 
+            li
+              a(onclick="$('.detail').animatescroll({padding:71});") 앱소개 
+            li
+              a(onclick="$('.features').animatescroll({padding:71});") 사용법
+            li
+              a(onclick="$('.social').animatescroll({padding:71});") 퍼즐코리언 채널 
+  header
+    .container
+      .row
+        .col-md-12
+          h1 GAME START!
+          p.lead 
+          .carousel-iphone
+            #carousel-example-generic.carousel.slide
+              ol.carousel-indicators
+                li.active(data-target='#carousel-example-generic', data-slide-to='0')
+                li(data-target='#carousel-example-generic', data-slide-to='1')
+                li(data-target='#carousel-example-generic', data-slide-to='2')
+              .carousel-inner
+                .item.active
+                  img(src='public/img/screenshots/app-4.png', alt='App Screen 1')
+                .item
+                  img(src='public/img/screenshots/app-5.png', alt='App Screen 2')
+                .item
+                  img(src='public/img/screenshots/app-6.jpg', alt='App Screen 3')
+  section.purchase
+    .container
+      .row
+        .col-md-offset-2.col-md-8
+          h1 GAME + KOREAN = <strong> PUZZLE KOREAN </strong>
+          p.lead Download Now 
+          button.play-store.animates(type='button')
+          button.app-store.animates(type='button')
+  section.payoff
+    .container
+      .row
+        .col-md-12
+        h1 
+          | 언어의 기본은 듣기, 소리를 들으면서 게임을 즐겨보세요. 
+          br 
+          | <strong> Puzzle Korean </strong> 유튜브채널을 통해서도 공부하세요.
+  section.detail
+    .container
+      .row
+        .col-md-12
+          #carousel-example-generic-2.carousel.slide
+            .carousel-inner
+              .item.active
+                .row
+                  .col-sm-12.col-md-offset-1.col-md-6
+                    h1 
+                      | Simple Design 
+                      br
+                      | One Touch Play 
+                      br
+                      | Multi Category
+                      br
+                      | Replays 
+                    p SOMR Sytem 심플, 원터치 그리고 다양한 카테고리
+                  .col-sm-12.col-md-5
+                    .app-screenshot
+                      img.img-responsive(src='public/img/screenshots/app-4.png', alt='App Screen 1')
+              .item
+                .row
+                  .col-sm-12.col-md-offset-1.col-md-6
+                    h1 
+                      | Login 
+                      br
+                      | Logout 
+                      br
+                      | Simple join 
+                    p LLS 심플, 로그인 로그아웃 그리고 회원가입 
+                  .col-sm-12.col-md-5
+                    .app-screenshot
+                      img.img-responsive(src='public/img/screenshots/app-5.png', alt='App Screen 2')
+              .item
+                .row
+                  .col-sm-12.col-md-offset-1.col-md-6
+                    h1 
+                      | MyPage 
+                      br
+                      | Collection 
+                      br
+                    p MC 마이페이지 그리고 컬렉션 
+                  .col-sm-12.col-md-5
+                    .app-screenshot
+                      img.img-responsive(src='public/img/screenshots/app-6.jpg', alt='App Screen 3')
+            ol.carousel-indicators
+              li.active(data-target='#carousel-example-generic-2', data-slide-to='0')
+              li(data-target='#carousel-example-generic-2', data-slide-to='1')
+              li(data-target='#carousel-example-generic-2', data-slide-to='2')
+  section.features
+    .container
+      .row
+        .col-md-4
+          .circle
+            h2 Qulity
+          h2 Quick & Easy Setup
+          p 퀄리티를 높이고, 쉬운 다운로드
+        .col-md-4
+          .circle
+            h2 UX & UI 
+          h2 Design Simple 
+          p 깔끔한 디자인과 UX를 활용한 디자인 
+        .col-md-4
+          .circle
+            h2 Touch 
+          h2 One touch 
+          p 단순한 게임조작방법 
+  section.social
+    .container
+      .row
+        .col-md-12
+          h2 Connect with us
+          a(href="#") CATUS
+  section.get-it
+    .container
+      .row
+        .col-md-12
+          h1 지금 앱을 다운받아보세요. 
+          button.play-store.animates(type='button')
+          button.app-store.animates(type='button')
+        .col-md-12
+          hr
+          ul
+            li
+              a(href='#link-here') Contact
+            li 
+              a(href="#") Youtube
+            li 
+              a(href="#") Facebook
+            li
+              a(href='#link-here') Developers
