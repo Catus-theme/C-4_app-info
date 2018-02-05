@@ -1,0 +1,38 @@
+nav.navbar.navbar-default(role='navigation')
+    .container
+      .navbar-header
+        button.navbar-toggle(type='button', data-toggle='collapse', data-target='.navbar-ex1-collapse')
+          span.sr-only Toggle navigation
+          span.icon-bar
+          span.icon-bar
+          span.icon-bar
+        a.navbar-brand(href='#') PUZZLE KOREAN 
+      .collapse.navbar-collapse.navbar-ex1-collapse
+        ul.nav.navbar-nav
+          li
+            a(onclick="$('header').animatescroll({padding:71});") 시작 
+          li
+            a(onclick="$('.detail').animatescroll({padding:71});") 앱소개 
+          li
+            a(onclick="$('.features').animatescroll({padding:71});") 사용법
+          li
+            a(onclick="$('.social').animatescroll({padding:71});") 퍼즐코리언 채널 
+header
+  .container
+    .row
+      .col-md-12
+        h1 GAME START!
+        p.lead 
+        .carousel-iphone
+          #carousel-example-generic.carousel.slide
+            ol.carousel-indicators
+              li.active(data-target='#carousel-example-generic', data-slide-to='0')
+              li(data-target='#carousel-example-generic', data-slide-to='1')
+              li(data-target='#carousel-example-generic', data-slide-to='2')
+            .carousel-inner
+              .item.active
+                img(src='public/img/screenshots/app-4.png', alt='App Screen 1')
+              .item
+                img(src='public/img/screenshots/app-5.png', alt='App Screen 2')
+              .item
+                img(src='public/img/screenshots/app-6.jpg', alt='App Screen 3')
